@@ -1,0 +1,161 @@
+
+@use "utils/variables" as fonts
+@use "utils/variables" as variables
+
+.proposition__strong-text-wrapper
+  padding-top: 30px
+  margin: 0 auto
+  width: 210px
+  text-align: center
+  height: 220px
+
+  
+.proposition__strong-text
+  display: inline-block
+  box-sizing: border-box
+  font-size: fonts.$font-size-samiSize
+  font-weight: fonts.$font-weight-lite
+  line-height: 1.5
+  color: variables.$color-text
+  text-align: center
+
+.proposition__strong-text:first-child
+  margin-bottom: 20px
+  
+.proposition__list
+  padding: 50px 0
+  padding-bottom: 0
+  background-image: url('/img/Shape_2.png')
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  
+  
+.proposition__item
+  color: #000
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  text-align: center
+
+.proposition__item:hover .proposition__img-screen,
+.proposition__item:focuse .proposition__img-screen  
+  border: 3px solid #00000022
+  outline: 3px solid #00000022
+
+.proposition__img-wrapper
+  order: 3
+  height: 400px
+  width: 100%
+  position: relative
+
+.proposition__img-phone-no-hand
+  height: 290px
+  width: auto
+  position: absolute
+  top: 10%
+  left: 24%
+  z-index: 2
+
+.proposition__img-screen
+  height: 245px
+  width: auto
+  position: absolute
+  top: 0
+  left: 21%
+  z-index: 1
+
+.proposition__item:not(:last-child) .proposition__img-wrapper 
+  display: none
+
+@media screen and (min-width: #{variables.$breakpoint-md})
+  .proposition__strong-text-wrapper
+    width: 620px
+    height: 160px
+    .proposition__strong-text:first-child
+      margin-bottom: 0px
+    .proposition__strong-text:last-child
+      display: block
+      margin: 0 auto
+      width: 210px
+  .proposition__list
+    padding-top: 20px
+    height: 460px
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+  .proposition__item
+    width: 310px
+    align-items: flex-start
+  .proposition__description
+    text-align: start
+  .proposition__img-wrapper
+    position: absolute
+    width: 299px
+    // height: 478px
+    bottom: 10px
+    left: -10px
+  .proposition__img-screen
+    width: 250px
+    top: -90px
+    left: 10%
+  .proposition__img-phone-no-hand
+    width: 220px
+    top: -31px
+    left: 15%
+
+
+
+@media screen and (min-width: #{variables.$breakpoint-xl})
+  .proposition
+    width: 1200px
+    background-image: url('/img/Shape_2.png')
+    background-position: center 230px
+    background-repeat: no-repeat
+    background-size: cover
+
+  .proposition__strong-text-wrapper
+    width: 800px
+    height: 240px
+    .proposition__strong-text:first-child
+      margin-top: 10px
+    .proposition__strong-text:last-child
+      width: 430px
+    .proposition__strong-text
+      font-size: 40px
+
+  .proposition__list
+    flex-direction: row
+    background-image: none
+    .proposition__item
+      height: 568px
+      justify-content: center
+      align-items: center
+      padding: 20px 10px
+      .proposition__img-wrapper 
+        order: 1
+        position: relative
+        display: block
+        height: 300px
+        width: 140px
+        .proposition__img-screen
+          width: 140px
+          top: 10px
+        .proposition__img-phone-no-hand
+          width: 128px
+          top: 40px
+          left: 21px
+      .proposition__title
+        order: 2
+      .proposition__description
+        display: inline-block
+        padding: 0 10px
+        text-align: center
+        order: 3
+
+  .proposition__item:hover .proposition__img-screen,
+  .proposition__item:focuse .proposition__img-screen  
+    border: 3px solid #00000022
+    outline: 3px solid #00000022

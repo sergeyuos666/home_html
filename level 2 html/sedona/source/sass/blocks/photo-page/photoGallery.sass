@@ -1,0 +1,150 @@
+@use "../../variables.sass"
+
+.photo-gallery__text-wrapper
+  height: 190px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin: 0 auto
+  padding-top: 36px
+  border-bottom: 1px solid variables.$color-grey
+  
+.photo-gallery__title
+  display: inline-block
+  font-size: 18px
+  padding: 0 20px
+  margin-bottom: 40px
+
+.photo-gallery__description
+  display: inline-block
+  text-align: center
+  padding: 0 20px
+
+.photo-gallery__list
+  display: flex
+  flex-direction: column
+  
+  gap: 6px
+  
+
+.photo-gallery__item
+  box-sizing: border-box
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: flex-start
+  width: 320px
+  padding: 24px 0
+  padding-left: 20px
+  border-bottom: 1px solid variables.$color-grey
+
+.galery-item__img
+  width: 100%
+  background-size: cover
+  background-position: center
+  margin-bottom: 10px
+
+
+.galery-item__title
+  font-size: 14px
+  line-height: 24px
+  font-weight: 700
+  margin: 0
+ 
+
+.galery-item__text
+  text-transform: math-auto
+  margin: 0
+  margin-bottom: 6px
+
+.galery-item__like-cover
+  display: flex
+  gap: 10px
+
+
+.galery-item__like-svg
+  width: 23px
+  height: 21px
+
+.galery-item__like-svg path
+  fill: variables.$color-grey
+
+
+.galery-item__like-text
+  line-height: 24px
+  font-weight: 700
+
+
+
+@media (min-width: variables.$tablet-width) 
+  .photo-gallery
+    width: 648px
+    margin: 0 auto
+
+  .photo-gallery__text-wrapper
+    padding-top: 10px 
+
+  .photo-gallery__title
+    font-size: 30px
+
+  .photo-gallery__description
+    width: 440px
+
+  .photo-gallery__list
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: start
+    gap: 0
+    
+  .galery-item
+    padding: 0
+    padding-bottom: 5px
+    margin: 0
+    width: 50%
+    background-color: #f2f2f2
+    border: none
+
+  .galery-item.first
+    width: 100%
+
+  .galery-item__author-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 90%
+    padding: 0px 20px
+    padding-bottom: 20px
+
+
+
+@media (min-width: variables.$desktop-width)
+  .photo-gallery
+    width: 1200px
+    margin: 0 auto
+
+  .galery-item__img
+    margin: 0
+
+  .photo-gallery__text-wrapper
+    padding-top: 30px 
+    padding-bottom: 30px 
+
+  .galery-item
+    position: relative
+    width: 33.3%
+
+  .galery-item.first
+    padding: 0
+    margin: 0
+
+  .galery-item__author-wrapper
+    position: absolute
+    box-sizing: border-box
+    color: variables.$color-white
+    width: 100%
+    left: 0
+    bottom: 8px
+    padding: 5px 10px
+    background-color: rgba(0, 0, 0,  0.5 )
+

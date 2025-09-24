@@ -1,0 +1,283 @@
+/* Файл variables.less */
+/* Файл scaffolding.less */
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "Arial", sans-serif;
+  color: #f7f4f1;
+  font-style: normal;
+  background-color: #292929;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Файл mixins.less */
+/* Файл outlines.less */
+body {
+  background: #292929 url("img/bb-mobile.png") no-repeat 50% 0;
+  background-size: 720px auto;
+  min-height: 750px;
+}
+@media (min-width: 768px) {
+  body {
+    background: #292929 url("img/bb-tablet.png") no-repeat 50% 0;
+    background-size: 1178px auto;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background: #292929 url("img/bb-desktop.png") no-repeat 50% 0;
+    background-size: 1391px auto;
+  }
+}
+.nav-mock {
+  /* Временно для сетки */
+  min-height: 310px;
+}
+@media (min-width: 768px) {
+  .nav-mock {
+    /* Временно для сетки */
+    min-height: 70px;
+  }
+}
+/* Файл blocks/page-header.less */
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+.page-header__logo {
+  height: 85px;
+}
+@media (min-width: 768px) {
+  .page-header__logo {
+    order: 2;
+    height: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-header__logo {
+    height: 648px;
+  }
+}
+/* Файл variables.less */
+/* Файл scaffolding.less */
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "Arial", sans-serif;
+  color: #f7f4f1;
+  font-style: normal;
+  background-color: #292929;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Файл mixins.less */
+/* Файл outlines.less */
+body {
+  background: #292929 url("img/bb-mobile.png") no-repeat 50% 0;
+  background-size: 720px auto;
+  min-height: 750px;
+}
+@media (min-width: 768px) {
+  body {
+    background: #292929 url("img/bb-tablet.png") no-repeat 50% 0;
+    background-size: 1178px auto;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background: #292929 url("img/bb-desktop.png") no-repeat 50% 0;
+    background-size: 1391px auto;
+  }
+}
+/* Файл blocks/stats.less */
+.stats {
+  width: 320px;
+  margin: 0 auto;
+  /* Временно для сетки */
+  min-height: 570px;
+}
+.stats__header {
+  padding-top: 30px;
+  padding-right: 40px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+  /* Временно для сетки */
+  min-height: 130px;
+}
+.stats__list {
+  width: 100%;
+  /* Временно для сетки*/
+  height: 320px;
+}
+@media (min-width: 768px) {
+  .stats {
+    width: 640px;
+    margin-top: -185px;
+    /* Временно для сетки */
+    min-height: 0;
+  }
+  .stats__list {
+    display: flex;
+  }
+}
+@media (min-width: 1200px) {
+  .stats {
+    display: flex;
+    width: 960px;
+    margin-top: -160px;
+  }
+  .stats__header {
+    width: 240px;
+    /* Временно для сетки */
+    min-height: 263px;
+  }
+  .stats__list {
+    width: 640px;
+  }
+}
+/* Настройки для block-mock */
+.block-mock {
+  height: 390px;
+}
+@media (min-width: 768px) {
+  .block-mock {
+    height: 469px;
+  }
+}
+@media (min-width: 1200px) {
+  .block-mock {
+    height: 720px;
+  }
+}
+/* Файл variables.less */
+/* Файл scaffolding.less */
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "Arial", sans-serif;
+  color: #f7f4f1;
+  font-style: normal;
+  background-color: #292929;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Файл mixins.less */
+/* Файл outlines.less */
+body {
+  background: #292929 url("img/bb-mobile.png") no-repeat 50% 0;
+  background-size: 720px auto;
+  min-height: 750px;
+}
+@media (min-width: 768px) {
+  body {
+    background: #292929 url("img/bb-tablet.png") no-repeat 50% 0;
+    background-size: 1178px auto;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background: #292929 url("img/bb-desktop.png") no-repeat 50% 0;
+    background-size: 1391px auto;
+  }
+}
+/* Файл blocks/page-header.less */
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+.page-header__logo {
+  height: 85px;
+}
+@media (min-width: 768px) {
+  .page-header__logo {
+    order: 2;
+    height: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-header__logo {
+    height: 648px;
+  }
+}
+.page-header,
+.page-header__logo {
+  outline: none;
+  background: transparent;
+}
+.page-header::before,
+.page-header__logo::before {
+  display: none;
+}
+.page-header::before,
+.page-header__logo::before {
+  display: none;
+}
+.page-header::before,
+.page-header__logo::before {
+  display: none;
+}
+.page-header__logo {
+  background: rgba(255, 255, 255, 0.5);
+}
+/* Файл blocks/main-nav.less */
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* Временно для сетки */
+  min-height: 50px;
+}
+.site-list {
+  /* Временно для сетки */
+  min-height: 255px;
+}
+@media (min-width: 768px) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    margin: 0 auto;
+  }
+  .site-list {
+    width: 570px;
+    /* Временно для сетки */
+    min-height: 70px;
+  }
+  .user-list {
+    width: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-nav__wrapper {
+    width: 960px;
+  }
+  .site-list {
+    width: 780px;
+  }
+  .user-list {
+    width: 160px;
+  }
+}

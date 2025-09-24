@@ -1,0 +1,41 @@
+@use "../../variables.sass"
+
+.advantages
+  width: 320px
+  text-align: center
+  margin-top: 40px
+  margin-bottom: 40px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center   
+
+
+
+.advantages__text
+  width: 244px
+  
+
+.advantages__video
+  width: 320px
+
+@media (min-width: variables.$tablet-width) 
+  .advantages
+    width: 768px
+
+  .advantages__text
+    width: 424px
+    margin-bottom: 20px
+
+  .advantages__video
+    width: 648px
+    height: auto
+
+
+@media (min-width: variables.$desktop-width)
+  .advantages
+    width: 1200px
+
+  .advantages__video
+    width: 800px
+    height: auto

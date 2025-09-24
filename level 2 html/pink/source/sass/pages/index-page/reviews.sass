@@ -1,0 +1,116 @@
+@use "utils/variables" as fonts
+@use "utils/variables" as variables
+
+.review
+  position: relative
+  z-index: 213
+  padding: 50px 0
+  margin-top: -60px
+  color: variables.$color-text
+  background-color: variables.$color-secondary
+  text-align: center
+
+.review__btn
+  display: none
+
+.review__btn-svg
+  display: none
+
+.review__btn-slog-svg
+  display: none
+
+.review__text-wrapper
+  color: variables.$color-text
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+.review__description
+  order: 2
+  font-size: fonts.$font-size-base
+  font-weight: fonts.$font-weight-base
+  line-height: 1.5
+  margin-bottom: 30px
+
+.review__user-wrapper
+  order: 1
+  margin-bottom: 20px
+
+.review__user-info
+  display: none
+
+.review__slider-btn-list
+  order: 3
+  display: flex
+  align-items: center
+  gap: 10px
+
+.review__slider-btn-item
+  width: 10px
+  height: 10px
+  border: 1px solid #3b3b3b
+  border-radius: 50px
+
+@media screen and (min-width: #{variables.$breakpoint-md})
+  .review__description
+    order: 1
+
+  .review__user-wrapper
+    order: 2
+    display: flex
+    flex-direction: column
+    gap: 10px
+    
+
+  .review__user-info
+    display: inline-block
+
+@media screen and (min-width: #{variables.$breakpoint-xl})
+  .review__container
+    display: flex
+    align-items: center
+    justify-content: space-around
+    
+    width: 1000px
+    margin: 0 auto
+
+  .review
+    box-sizing: border-box
+    height: 413px
+
+  .review__btn
+    display: block
+    width: 20px
+    height: 20px
+    background-color: transparent
+    border: none
+
+  .review__btn:hover,
+  .review__btn:focuse
+    opacity: 0.6
+
+  .review__btn:active
+    opacity: 0.3
+
+  .review__btn-svg
+    display: block
+    width: 26px
+    height: 46px
+
+
+  .review__btn-svg.left
+    transform: rotate(180deg)
+
+  .review__btn-slog-svg
+    display: block
+    width: 87px
+    height: 85px
+    fill: #cacaca
+    margin-bottom: 30px
+
+  .review__description
+    width: 600px
+
+  .review__slider-btn-list
+    display: none

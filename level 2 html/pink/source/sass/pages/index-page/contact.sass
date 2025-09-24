@@ -1,0 +1,115 @@
+@use "utils/variables" as fonts
+@use "utils/variables" as variables
+
+
+.contact
+  position: relative
+  .container
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    .contact__map-container
+      position: relative
+      padding-top: 40px
+      background-color: variables.$color-secondary
+      .contact__slog
+        display: inline-block
+        font-size: fonts.$font-size-samiSize
+        font-weight: fonts.$font-weight-lite
+        color: variables.$color-text
+        margin-bottom: 20px
+        text-align: center
+      .contact__map-list
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 10px
+        z-index: 222
+        .contact__map-item
+          display: flex
+          flex-direction: column
+          align-items: center
+          justify-content: center
+          text-align: center
+          .contact__map-text
+            font-size: fonts.$font-size-sm
+            font-weight: fonts.$font-weight-bold
+          .contact__map-link
+            font-size: fonts.$font-size-samiSize
+            font-weight: fonts.$font-weight-lite
+          
+
+.contact__bg-svg
+  width: 320px
+  height: 120px
+  margin-top: -44px
+
+.contact__mark-svg
+  position: absolute
+  top: 480px
+  left: 80px
+  width: 36px
+  height: 36px
+  z-index: 9999
+  
+  
+
+
+
+
+@media screen and (min-width: #{variables.$breakpoint-md})
+  .contact
+    .container
+      .contact__map-container
+        text-align: center
+        .contact__slog
+          font-size: 40px
+          width: 370px
+          line-height: 1.2
+          margin-bottom: 20px
+        .contact__map-list
+          flex-direction: row
+          justify-content: center
+          flex-wrap: wrap
+          gap: 20px
+          
+          align-items: center
+          .contact__map-item--address
+            order: 3
+          .contact__map-item--email
+            order: 2
+            margin-left: 60px
+          .contact__map-item--phone
+            order: 1
+            margin-right: 60px
+
+  .contact__bg-svg
+    width: 660px
+    height: auto
+    margin-top: -41px
+ 
+.contact__map-list .link:hover, 
+.contact__map-list .link:focus
+  color: black
+  text-decoration: underline
+
+.contact__map-list .link:active
+  color: #8f8f8f
+  text-decoration: none
+  
+@media screen and (min-width: #{variables.$breakpoint-xl})
+  .contact
+    height: 867px
+  .map-img
+    height: 867px
+  .contact__bg-svg
+    width: 1200px
+    margin-top: -13px
+  .contact
+    .container
+     .contact__map-container
+       .contact__map-list
+         .contact__map-item--email
+           margin-right: 90px
+

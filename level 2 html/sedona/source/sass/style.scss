@@ -1,0 +1,17 @@
+@use "mixins.sass";
+@use "variables.sass";
+@use "fonts/fonts";
+@use "global/global";
+@use "header/header";
+@use "hero/hero";
+@use "blocks/index/aboutSite.sass";
+@use "blocks/index/cause-first.sass";
+@use "blocks/index/recommendation.sass";
+@use "blocks/index/causeSecond.sass";
+@use "blocks/index/otherCause.sass";
+@use "blocks/index/describe.sass";
+@use "footer/footer.sass";
+@use "blocks/photo-page/pagePhotohero.sass";
+@use "blocks/photo-page/photoGallery.sass";
+@use "blocks/photo-page/advantages.sass";
+@use "blocks/form-page/form-page.sass";

@@ -1,0 +1,82 @@
+@use "utils/variables" as fonts
+@use "utils/variables" as variables
+  
+.time-section
+  display: none
+  position: relative
+  padding: 60px 10px
+  z-index: 1
+
+.time-section__img__wrapper
+  display: flex
+  justify-content: center
+  margin: 0 auto
+  
+.time__img-wrapper
+  position: relative
+  display: block
+  height: 280px
+  width: 300px
+  
+
+
+.time__svg
+  position: absolute
+  top: 10px
+  left: 0
+  color: #dedede
+  width: 240px
+  height: 280px
+
+.time__circle
+  position: absolute
+  top: 66px
+  left: 17px
+  color: variables.$color-link
+  width: 204px
+  height: 204px
+
+
+.time__24-text
+  display: inline-block
+  position: absolute
+  top: 90px
+  left: 62px
+  color: variables.$color-link
+  font-size: 96px
+  font-weight: variables.$font-weight-bold
+
+  
+.time-section__text-wrapper
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+  text-align: start
+  gap: 20px
+  height: 280px
+  width: 320px
+
+  .time-section__title
+    display: inline-block
+    width: 200px
+    font-size: 30px
+    font-weight: variables.$font-weight-bold
+    padding: 0
+    margin: 0
+
+  .time-section_link
+    font-size: variables.$font-size-base
+    font-weight: variables.$font-weight-bold
+
+
+@media screen and (min-width: #{variables.$breakpoint-md})
+  .time-section
+    display: flex
+
+@media screen and (min-width: #{variables.$breakpoint-xl})
+  .time-section
+    padding-top: 50px
+    padding-bottom: 100px
+    background-color: #f2f2f2
+   

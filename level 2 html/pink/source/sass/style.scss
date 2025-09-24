@@ -1,0 +1,33 @@
+// 2. Utils
+@use "utils/variables";
+@use "utils/mixins";
+@use "utils/functions";
+
+// 3. Base styles
+@use "base/reset";
+@use "base/typography";
+@use "base/global";
+
+// 3. Components
+@use "components/close-btn";
+@use "components/button";
+
+// 4. Layout
+@use "layout/header";
+@use "layout/footer";
+@use "layout/hero";
+
+// 5. Pages index
+@use "pages/index-page/propositionSection";
+@use "pages/index-page/reviews";
+@use "pages/index-page/time-24";
+@use "pages/index-page/price";
+@use "pages/index-page/contact";
+
+// 6. Pages photo
+@use "pages/photo-page/panorama";
+@use "pages/photo-page/photoFilter";
+
+// 7. Pages form
+@use "pages/form-page/formFilter";
+@use "pages/form-page/infoText";

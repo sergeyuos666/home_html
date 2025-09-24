@@ -1,0 +1,117 @@
+
+@use "utils/variables" as variables
+@use "utils/variables" as fonts
+
+
+
+.header
+  box-sizing: border-box
+  position: absolute
+  top: 0
+  background-color: rgba(70, 45, 159, 0.4)
+  color: variables.$color-secondary
+  padding: 20px
+  text-align: center
+  font-size: 24px
+  font-family: 'Arial', sans-serif
+  border-radius: 5px
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2)
+  z-index: 1000
+
+.displey-no
+  display: none  
+
+.header__logo-wrapper
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.header__logo-svg
+  fill: variables.$color-secondary
+  color: variables.$color-secondary
+
+.header__logo-link:hover .header__logo-svg,
+.header__logo-link:focus .header__logo-svg 
+  cursor: pointer
+  fill: variables.$color-link
+  color: variables.$color-link
+  opacity: 0.8
+
+.header__logo-link:active .header__logo-svg
+  cursor: pointer
+  fill: variables.$color-link
+  color: variables.$color-link
+  opacity: 0.4
+
+.header__burger-menu-wrapper
+  display: flex
+  align-items: center
+
+.header__burger-menu-svg 
+  color: #ffffff
+
+
+
+.header__burger-menu-btn:hover .header__burger-menu-svg,
+.header__burger-menu-btn:focus .header__burger-menu-svg 
+  cursor: pointer
+  fill: variables.$color-link
+  color: variables.$color-link
+  opacity: 0.8
+
+.header__burger-menu-btn:active .header__burger-menu-svg
+  cursor: pointer
+  fill: variables.$color-link
+  color: variables.$color-link
+  opacity: 0.4
+
+.header__item
+  margin-left: -20px
+  width: 320px
+  padding: 14px 0
+  border-top: 2px solid rgba(0, 0, 0, 0.5 )
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5 )
+
+
+.nav-link
+  color: variables.$color-secondary
+  font-size: fonts.$font-size-sm
+  font-weight: fonts.$font-weight-bold
+
+.nav-link:hover,
+.nav-link:focus 
+  cursor: pointer
+  fill: variables.$color-link
+  color: variables.$color-link
+
+.nav-link:active 
+  cursor: pointer
+  fill: variables.$color-link
+  color: variables.$color-link
+  opacity: 0.4
+
+@media screen and (min-width: #{variables.$breakpoint-md})
+  .header__item
+    width: 660px
+
+
+@media screen and (min-width: #{variables.$breakpoint-xl})
+  .header
+    width: 1200px
+  .header__nav
+    display: flex
+    justify-content: space-between
+
+  .displey-no
+    display: flex 
+    
+  .header__list
+    display: flex
+    gap: 50px
+  
+  .header__burger-menu-wrapper
+    display: none
+
+  .header__item
+    width: 180px
+    border: none

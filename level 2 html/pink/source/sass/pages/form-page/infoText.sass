@@ -1,0 +1,21 @@
+@use "utils/variables" as variables
+@use "utils/variables" as fonts
+
+
+.info-text
+  padding: 40px 20px
+  text-align: center
+.info-text__messag.display-none
+  display: none
+
+
+@media screen and (min-width: #{variables.$breakpoint-md})
+  .info-text__messag.display-none
+    display: inline
+  .info-text
+    padding: 40px 80px
+
+
+@media screen and (min-width: #{variables.$breakpoint-xl})
+  .info-text
+    padding: 40px 100px

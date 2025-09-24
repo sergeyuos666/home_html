@@ -1,0 +1,9 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="65mm" height="9mm" viewBox="0 0 767 106">
+  <rect width="767" height="106" fill="#FFF0F0" rx="20" />
+  <polygon points="40,10 70,25 70,55 40,70 10,55 10,25" fill="#F5CDCD" />
+  <text x="30" y="47" font-size="30" fill="#281E1E" font-family="Arial" text-anchor="middle" dominant-baseline="middle">1</text>
+  <text x="90" y="50" font-size="35" fill="#281E1E" font-family="Georgia">FLOWER GEL</text>
+  <text x="627" y="40" font-size="28" fill="#D74691" font-family="Arial">GĒLI</text>
+  <text x="627" y="65" font-size="12" fill="#D74691" font-family="Arial">NAIL BEAUTY &amp; CARE</text>
+</svg>

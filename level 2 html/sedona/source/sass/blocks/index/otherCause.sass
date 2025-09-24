@@ -1,0 +1,90 @@
+@use "../../variables.sass"
+
+.other-cause
+  background-color: variables.$color-second-grey
+
+.other-cause__list
+  display: flex
+  flex-direction: column
+  gap: 6px
+  
+  margin: 0 auto
+  
+
+.other-cause__item
+  box-sizing: border-box
+  display: flex
+  flex-direction: column
+  text-align: center
+  justify-content: space-around
+  height: 168px
+  padding: 20px 0
+  border-bottom: 1px solid variables.$color-grey
+  gap: 0px
+
+.other-cause__item:last-child
+  border-bottom: none
+
+.other-cause__item-title
+  font-size: 18px
+  text-transform: uppercase
+  margin: 0
+
+.other-cause__num
+  display: flex
+  align-items: center
+  gap: 5px
+  justify-content: center
+  align-items: center
+  margin-bottom: 14px
+  margin-top: 14px
+
+.other-cause__num::before
+  content: ''
+  display: block
+  width: 10px
+  height: 2px
+  margin: 0
+  background-color: variables.$color-text-grey
+  
+
+.other-cause__num::after
+  content: ''
+  display: block
+  width: 10px
+  height: 2px
+  margin: 0
+  background-color: variables.$color-text-grey
+
+.other-cause__description
+  width: 248px
+  margin: 0 auto
+
+
+@media (min-width: variables.$tablet-width) 
+  .other-cause__list
+    flex-direction: row
+
+  .other-cause__item
+    height: 260px
+    padding: 50px 0
+    padding-bottom: 60px
+    border-bottom: none
+
+  .other-cause__item-title
+    width: 122px
+    margin: 0 auto
+
+  .other-cause__num
+    width: 164px
+    margin: 0 auto
+
+@media (min-width: variables.$desktop-width) 
+  .other-cause__item
+    width: 400px
+
+  .other-cause__item-title
+    width: 128px
+
+  .other-cause__description
+    width: 290px

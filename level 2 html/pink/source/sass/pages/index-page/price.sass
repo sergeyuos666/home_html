@@ -1,0 +1,108 @@
+@use "utils/variables" as fonts
+@use "utils/variables" as variables
+
+.price
+  background-image: url('/img/Shape_4.png')
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  padding: 50px 0
+  padding-top: 50px
+
+.price__container
+  width: 100%
+  overflow-x: auto
+  -webkit-overflow-scrolling: touch
+
+.price__table
+  border-collapse: collapse
+
+.price__table-row
+  display: flex
+  flex-direction: row
+  align-items: center
+  width: 100%
+  height: 100px
+  
+
+th
+  display: inline-block
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 280px
+  height: 100px
+  border: 1px solid #e6e6e6
+
+td
+  display: inline-block
+  width: 280px
+  height: 60px
+  border: 1px solid #e6e6e6
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+.price__table-head
+  background-color: variables.$color-primary
+  color: variables.$color-secondary
+  font-size: fonts.$font-size-sm
+
+  .price__table-item
+    position: relative
+
+    .price__hit-img
+      position: absolute
+      top: 0
+      left: 0
+      height: 70px
+      width: auto
+
+    .price__hit-text
+      position: absolute
+      top: 10px
+      left: 12px
+      transform: rotate(-45deg)
+
+.price__slider-btn-list
+  margin-top: 40px
+  align-items: center
+  justify-content: center
+
+.price__hit-svg.yes-svg
+  fill: green
+
+.price__hit-svg.no-svg
+  fill: red
+
+.price__table-item.th-free
+  background-color: #f2f2f2
+  border: 1px solid #f2f2f2 
+  
+
+
+@media screen and (min-width: #{variables.$breakpoint-md})
+  .price__container
+    margin-top: 80px
+    width: 620px
+    
+  .price__table
+    border-collapse: none
+
+  .price__table-row
+    width: 620px
+    height: auto
+
+  .price__slider-btn-list
+    display: none
+ 
+
+@media screen and (min-width: #{variables.$breakpoint-xl})
+  .price__container
+    width: 950px
+  .price__table-row
+    width: 950px
+ 
+  

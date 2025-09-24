@@ -1,0 +1,100 @@
+@use "../../variables.sass"
+
+.cause-second
+  display: flex
+  flex-direction: column
+  gap: 0
+ 
+
+.cause-second__cover-text
+  position: relative
+  order: 1
+  box-sizing: border-box
+  padding: 38px 0
+  padding-top: 40px
+  background-color: variables.$color-blue
+  color: variables.$color-white
+  text-align: center
+
+  
+
+.cause-second__title
+  margin: 0
+  
+  text-transform: uppercase
+
+.cause-second__number
+  display: flex
+  align-items: center
+  gap: 5px
+  justify-content: center
+  align-items: center
+  margin-bottom: 14px
+  margin-top: 14px
+
+.cause-second__number::before
+  content: ''
+  display: block
+  width: 10px
+  height: 2px
+  margin: 0
+  background-color: variables.$color-white
+
+.cause-second__number::after
+  content: ''
+  display: block
+  width: 10px
+  height: 2px
+  margin: 0
+  background-color: variables.$color-white
+
+.cause-second__text
+  margin: 0 auto
+  max-width: 280px
+
+
+.cause-second__cover-img
+  order: 2
+  width: 320px
+  height: 260px
+  background-image: url("../img/photo-bridge2.png")
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+
+@media (min-width: variables.$tablet-width)
+  .cause-second
+    flex-direction: row
+
+  .cause-second__cover-text
+    width: 256px
+    order: 2
+
+  .cause-second__title
+    max-width: 152px
+    margin: 0 auto
+
+  .cause-second__text
+    max-width: 162px
+
+  .cause-second__cover-img
+    width: 512px
+    order: 1
+
+
+@media (min-width: variables.$desktop-width) 
+  .cause-second__cover-text
+    width: 400px
+    order: 2
+    padding-top: 50px
+
+  .cause-second__text
+    max-width: 240px
+
+  .cause-second__number
+    margin-bottom: 24px
+    margin-top: 24px 
+
+  .cause-second__cover-img
+    width: 800px
+    order: 1

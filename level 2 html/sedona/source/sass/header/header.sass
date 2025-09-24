@@ -1,0 +1,132 @@
+@use "../variables.sass"
+
+.page-header__nav
+  position: relative
+
+.page-header__nav-wrapper 
+  position: relative
+  background-color: variables.$color-blue
+
+.nav-list 
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  padding: 0
+  margin: 0
+
+.nav-list__item
+  width: 100%
+  padding: 20px 0
+
+  text-align: center
+
+.nav-list .nav-list__item:not(:last-child)
+  border-bottom: 1px solid variables.$color-grey
+
+.nav-list .nav-list__item:last-child
+  box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.5)
+
+.page-header__close-btn-cover
+  position: absolute
+  top: 26px
+  right: 20px
+
+.nav-list__link
+  font-weight: 700
+
+.page-header__nav-close-btn
+  position: relative
+  display: block
+  width: 23px
+  height: 22px
+
+.page-header__nav-close-btn::before
+  content: ""
+  display: block
+  width: 20px
+  height: 4px
+
+  position: absolute
+  top: 0px
+  left: 3px
+
+  transform: rotate(45deg)
+  background-color: variables.$color-white
+
+.page-header__nav-close-btn::after
+  content: ""
+  display: block
+  width: 20px
+  height: 4px
+
+  position: absolute
+  top: 0px
+  right: 0px
+
+  transform: rotate(-45deg)
+  background-color: variables.$color-white
+
+.page-header__link
+  margin-top: 26px 
+  z-index: 11
+
+.page-header__logo
+  width: 102px
+  height: 83px
+
+.page-header__cover
+  display: flex
+  align-items: center
+  gap: 66px
+
+  width: 102px
+  height: 56px
+
+  margin-left: 110px
+
+.page-header__btn-menu
+  background-color: transparent
+  border: none
+  cursor: pointer
+  width: 23px
+  height: 21px
+
+.page-header__btn-menu-icon rect
+  fill: variables.$color-blue
+  color: variables.$color-blue
+
+
+@media (min-width: variables.$tablet-width) 
+  .page-header__nav-wrapper
+    background-color: variables.$color-white
+
+  .nav-list 
+    flex-direction: row
+
+  .page-header__btn-menu
+    display: none
+
+  .nav-list .nav-list__item:nth-child(2)
+    margin-right: 60px
+
+  .nav-list .nav-list__item:not(:last-child)
+    border-bottom: none
+
+  .nav-list .nav-list__item:last-child
+    box-shadow: none
+
+  .nav-list__link
+    color: variables.$color-black
+
+  .page-header__cover
+    position: absolute
+    top:10px
+    left: 29%
+
+  .page-header__link
+    margin-top: 0
+  
+@media (min-width: variables.$desktop-width) 
+  .page-header__cover
+    left: 37%

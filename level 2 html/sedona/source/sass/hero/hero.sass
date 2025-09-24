@@ -1,0 +1,53 @@
+@use "../variables.sass"
+
+.intro
+  margin-bottom: 0px
+  
+.intro__cover
+  position: relative
+  padding-bottom: 40px
+  box-sizing: border-box
+  text-align: center
+  background-image: url("../img/back-desktop.png")
+  background-size: 300%
+  background-position:-290px -12px
+  background-repeat: no-repeat
+
+.intro__text-svg
+  margin-top: 80px
+  width: 282px
+
+.intro__shape
+  position: absolute
+  bottom: 0
+  left: 0
+
+  width: 100%
+  height: 57px
+  background-image: url("../img/intro-triangle2.png")
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  
+
+@media (min-width: variables.$tablet-width) 
+  .intro__cover
+    background-size: 200%
+    background-position: -390px -80px
+
+  .intro__text-svg
+    margin-top: 0px
+    width: 458px
+
+  .intro__cover
+    padding: 70px 0
+   
+@media (min-width: variables.$desktop-width) 
+  .intro__cover
+    background-size: 100%
+    background-position: 0px 0px
+
+  .inner__st1-welcome, .inner__st1-stroke, .inner__st1-gergeous, .inner__st1-because
+    display: block
+
+   

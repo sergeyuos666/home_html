@@ -1,0 +1,48 @@
+@import "normalize.less";
+
+body {
+  color: spin(red 45deg);
+}
+
+.heading() {
+  font-size: 2em;
+  color: #333;
+}
+
+.learfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.title {
+  color: tomato;
+  .heading();
+  .clearfix();
+}
+
+.size(@width:50px, @height:50px) {
+  width: @width;
+  height: @height;
+}
+
+.square {
+  .size(100px, 100px);
+}
+
+------------- 
+// не используєм
+.list-rest {
+  list-style: none;
+}
+
+.square_item {
+  margin: 0;
+
+  &:extend(.list-rest);
+}

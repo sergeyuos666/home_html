@@ -1,0 +1,129 @@
+@use "utils/variables" as variables
+@use "utils/variables" as fonts
+
+.photo-filter
+  .photo-filter__slog
+    font-weight: variables.$font-weight-base
+    text-align: center
+    padding: 40px 20px
+  .photo-filter__wrapper
+    box-sizing: border-box
+    color: variables.$color-text
+    background-color: variables.$color-grey
+    padding: 20px
+    width: 320px
+    .photo-filter__fiter-cover
+      .photo-filter__form
+        .photo-filter__form-fieldset
+          display: flex
+          box-sizing: border-box
+          flex-direction: row
+          justify-content: space-around
+          align-items: center
+          gap: 0px
+          height: 130px
+          width: 320px
+          margin-left: -20px
+          padding-bottom: 20px
+          border: none
+          border-bottom: 1px solid #c2c2c2
+          .photo-filter__label
+            position: relative
+            height: 90px
+            .photo-filter__fiter-svg
+              width: 34px
+              height: 32px
+              fill: #b4b4b4
+            .photo-filter__filter-input
+              position: absolute
+              bottom: 0px
+              left: 0px
+              width: 250px
+            .photo-filter__fiter-svg.checked
+              fill: variables.$color-link
+            .photo-filter__filter-input.display-none
+              display: none
+      .photo-filter__filter-btn-cover
+        display: flex
+        flex-direction: column
+        box-sizing: border-box
+        justify-content: center
+        align-items: center
+        gap: 20px
+        padding: 40px 20px
+        .photo-filter__filter-btn
+          width: 280px
+          height: 53px
+          color: variables.$color-link
+          font-size: fonts.$font-size-base
+          font-weight: fonts.$font-weight-bold
+          border-radius: 30px
+          border: 2px solid variables.$color-link
+          cursor: pointer  
+        .photo-filter__filter-btn.not-active
+          color: #c2c2c2
+          border: 2px solid #c2c2c2
+          cursor: not-allowed
+
+ 
+
+@media screen and (min-width: #{variables.$breakpoint-md})
+  .photo-filter
+    .photo-filter__wrapper
+      display: flex
+      gap: 30px
+      width: 660px
+      .photo-filter__fiter-cover
+        .photo-filter__form
+          .photo-filter__form-fieldset
+            flex-direction: column
+            width: 300px
+            padding-bottom: 40px
+            border-bottom: none
+            .photo-filter__label
+              height: 90px
+              padding-left: 20px
+              display: flex
+              align-items: center
+              justify-content: center
+              gap: 30px
+              .photo-filter__fiter-svg
+                width: 24px
+                height: 22px
+              .photo-filter__filter-input
+                position: relative
+                width: 220px
+              .photo-filter__filter-input.display-none
+                display: block
+
+
+      
+
+@media screen and (min-width: #{variables.$breakpoint-xl})
+  .photo-filter
+    .photo-filter__wrapper
+      width: 1200px
+      gap: 180px
+      padding: 40px 140px
+      text-align: center
+      .photo-filter__fiter-cover
+        .photo-filter__form
+          .photo-filter__form-fieldset
+            padding-bottom: 140px
+            .photo-filter__label
+              height: 90px
+              gap: 50px
+              .photo-filter__fiter-svg
+                width: 44px
+                height: 42px
+              .photo-filter__filter-input
+                width: 300px
+          .photo-filter__filter-btn-cover
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            gap: 30px
+            .photo-filter__filter-btn
+              width: 184px
+

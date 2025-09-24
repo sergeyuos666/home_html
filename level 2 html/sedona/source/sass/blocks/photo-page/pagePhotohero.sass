@@ -1,0 +1,31 @@
+@use "../../variables.sass"
+
+.inner-page .intro__cover
+  background-size: 550%
+  background-position: -600px -400px
+  height: 160px
+
+.inner-page .intro__text-svg
+  margin-top: 60px
+  width: 234px
+
+.st1-sedona path
+  fill: variables.$color-white
+
+@media (min-width: variables.$tablet-width) 
+  .inner-page .intro__cover
+    background-size: 300%
+    background-position: -400px -700px
+    height: 288px
+
+  .inner-page .intro__text-svg
+    width: 458px
+
+@media (min-width: variables.$desktop-width)
+  .inner-page .intro__cover
+    background-size: 140%
+    background-position: -440px -300px
+    height: 302px
+
+  .inner-page .intro__text-svg
+    width: 461px

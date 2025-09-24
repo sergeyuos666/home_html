@@ -1,0 +1,172 @@
+@use "utils/variables" as variables
+@use "utils/variables" as fonts
+
+
+.hero__wrapper
+  background-color: variables.$color-primary
+
+.hero__cover
+  position: relative
+  background-image: url('/img/back-mobile1x.png')
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  width: 320px
+  height: 468px
+  z-index: 1
+  
+.hero__hend-phone-wrapper
+  position: absolute
+  top: 214px
+  width: 258px
+  height: 498px
+  z-index: 2
+
+.hero__phone-wrapper
+  position: absolute
+  top: 234px
+  left: 79px
+  width: 95px
+  height: 183px
+  z-index: 1
+
+.hero__text-wrapper
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  height: 275px
+  padding-top: 40px
+  z-index: 3
+
+.hero__text-title
+  display: none
+
+.hero__btn
+  box-sizing: border-box
+  display: inline-block
+  padding: 10px 0
+  border: 3px solid variables.$color-secondary
+  border-radius: 30px
+  width: 280px
+  height: 54px
+  margin-bottom: 30px
+
+
+.hero__btn:hover,
+.hero__btn:focus 
+  cursor: pointer
+  background-color: variables.$color-secondary
+  color: variables.$color-link
+
+.hero__btn:active 
+  cursor: pointer
+  background-color: variables.$color-secondary
+  color: rgba(234, 34, 34, 0.4 )
+  
+
+.hero__program-list
+  display: flex
+  justify-content: space-around
+  align-items: center
+  width: 280px
+  margin-bottom: 30px
+
+
+.program-item__link-svg
+  width: 60px
+
+.inner-page .hero
+  width: 320px
+  height: 239px
+
+.inner-page .hero__cover
+  height: 219px
+  background-size: 130% auto
+  background-position: center center 
+  display: flex
+  align-items: center
+  justify-content: center
+  color: variables.$color-secondary
+  padding-top: 20PX
+
+.inner-page .main-title
+  display: inline-block
+  font-size: fonts.$font-size-samiSize
+  font-weight: fonts.$font-weight-lite
+  text-align: center
+  width: 280px
+
+
+.hero__text
+  font-size: fonts.$font-size-base
+  font-weight: fonts.$font-weight-base
+  color: variables.$color-secondary
+  text-align: center
+  width: 240px
+ 
+
+@media screen and (min-width: #{variables.$breakpoint-md})
+  .hero__wrapper
+    position: relative
+
+  .hero__cover
+    width: 660px
+    height: 773px
+
+  .hero__text-wrapper
+    position: absolute
+    top: 70px
+    left: 20px 
+    gap: 20px
+    z-index: 3
+  
+  .hero__text-title
+    display: inline-block
+    color: variables.$color-secondary
+    font-size: 40px
+    font-weight: fonts.$font-weight-lite
+    text-align: center
+    width: 210px
+
+  .hero__hend-phone-wrapper
+    top: 263px
+    right: -80px
+    width: 520px
+    height: auto
+   
+
+  .hero__phone-wrapper
+    top: 294px
+    left: 380px
+    width: 194px
+    height: auto
+    
+
+
+
+@media screen and (min-width: #{variables.$breakpoint-xl})
+  .hero__cover
+    position: relative
+    background-image: url('/img/back-desktop.jpg')
+    width: 1200px
+    height: 833px
+
+  .hero__hend-phone-wrapper
+    top: 244px
+    right: 0px
+    width: 600px
+    height: auto
+   
+  .hero__phone-wrapper
+    top: 284px
+    left: 788px
+    width: 220px
+    height: auto
+
+  .hero__text-wrapper
+    top: 140px
+    left: 160px 
+  
+  .inner-page .main-title
+    margin-top: 80px

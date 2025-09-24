@@ -1,0 +1,226 @@
+@use "utils/variables" as variables
+@use "utils/variables" as fonts
+  
+.form__fieldset
+  position: relative
+  box-sizing: border-box
+  display: flex
+  flex-direction: column
+  border: none
+  gap: 20px
+  margin-bottom: 40px
+  padding-left: 20px
+  padding-right: 20px
+
+.form__label
+  display: flex
+  flex-direction: column
+  gap: 10px
+  width: 100%
+
+.form__user-text,
+.form__contact-text
+  color: variables.$color-link
+  text-transform: uppercase
+  margin-left: 20px
+
+.form__user-input,
+.form__contact-input
+  box-sizing: border-box
+  width: 100%
+  height: 62px
+  padding: 10px
+  padding-left: 20px
+  border: 1px solid #a5a4a4
+
+.form__fieldset-contact .form__fieldset-legend
+  display: none
+
+//form__fieldset-achievements
+.form__fieldset-achievements,
+.form__fieldset-program
+  position: relative
+  padding-top: 80px
+  padding-bottom: 30px
+  background-color: variables.$color-grey
+  width: 100%
+
+
+.form__fieldset-legend
+  position: absolute
+  top: 0px
+  left: 14%
+  display: inline-block
+  margin-top: 20px
+  color: variables.$color-link
+  text-align: center
+  text-transform: uppercase
+  width: 220px
+
+.form__achievements-label,
+.form__program-label
+  flex-direction: row
+  justify-content: start
+  align-items: center
+  gap: 10px
+
+.form__achievements-input,
+.form__program-input
+  width: 38px
+  height: 38px
+  margin-right: 20px
+
+.form__achievements-text,
+.form__program-text
+  font-size: variables.$font-size-sm
+
+//form__textarea
+.form__fieldset-textarea
+  padding-top: 50px
+
+.form__textarea
+  box-sizing: border-box
+  width: 280px
+  height: 200px
+  padding: 26px
+  border: 1px solid #a5a4a4
+
+.filter__btn-cover
+  text-align: center
+  margin-bottom: 20px
+
+.filter__btn
+  width: 280px
+  height: 62px
+  background-color: green
+  color: variables.$color-secondary
+  font-size: variables.$font-size-base
+  font-weight: variables.$font-weight-bold
+  text-transform: uppercase
+  margin: 0 auto
+  margin-bottom: 20px
+
+.filter__btn-remark
+  font-size: variables.$font-size-base
+  font-weight: variables.$font-weight-lite
+  text-transform: uppercase
+  
+.filter__btn-remark span
+  color: variables.$color-link
+
+.form__contact-svg-wrapper
+  display: none
+
+@media screen and (min-width: #{variables.$breakpoint-md})
+  .form
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 20px
+
+  .form__fieldset
+    width: 100%
+    border: 1px solid #b9b9b9
+    padding: 50px 62px
+    
+
+  .form__fieldset-user
+    order: 1
+    padding: 0px 20px
+    border: none
+  .form__fieldset-achievements
+    order: 4
+    background-color: variables.$color-secondary
+  .form__fieldset-contact
+    order: 3
+  .form__fieldset-program
+    order: 2
+    background-color: variables.$color-secondary
+  .form__fieldset-textarea
+    order: 5
+  .filter__btn-cover
+    order: 6
+
+  .form__fieldset-legend
+    display: inline-block
+    margin-top: 0px
+    margin: 0 auto
+    left: 0
+    position: relative
+    width: auto
+    background-color: variables.$color-secondary
+    padding: 0 20px
+    
+
+  .form__user-label
+    flex-direction: row
+    align-items: center
+    gap: 20px
+
+  .form__fieldset-contact .form__fieldset-legend
+    display: inline-block
+
+  .form__textarea
+    width: 100%
+    height: 200px
+
+  .filter__btn-cover
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    width: 100%
+
+  .filter__btn
+    margin: 0
+
+  .form__contact-label
+    position: relative
+    
+    
+  .form__contact-svg-wrapper
+    position: absolute
+    top: 32px
+    right: 0px
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #aaaaaa
+    width: 60px
+    height: 60px
+  .form__input-svg
+    fill: red
+
+@media screen and (min-width: #{variables.$breakpoint-xl})
+  .form
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+
+
+  .form__fieldset-user
+    width: 49%
+    
+  .form__fieldset-achievements
+    width: 100%
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+
+  .form__achievements-label
+    width: 30%
+    
+    
+  .form__fieldset-contact
+    width: 100%
+    flex-direction: row
+  .form__fieldset-program
+    width: 48%
+  .form__fieldset-textarea
+    width: 100%
+  .filter__btn-cover
+    width: 100%
+
+  .filter__btn
+    width: 340px

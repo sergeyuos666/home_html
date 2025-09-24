@@ -1,0 +1,256 @@
+@use "../../variables.sass"
+
+
+
+.feedback
+  text-align: center
+  margin-bottom: 40px
+
+.form__fieldset
+  position: relative
+  padding: 20px 20px
+  padding-top: 60px
+  margin: 0
+  display: flex
+  flex-direction: column
+  border: none
+  border-top: 1px solid variables.$color-second-grey
+
+.form__legend
+  position: absolute
+  font-size: 18px
+  font-weight: 700
+  top: 20px
+  left: 30%
+
+.form__lable
+  display: flex
+  align-items: center
+  gap: 10px
+  margin-bottom: 10px
+  font-size: 18px
+  font-weight: 600
+
+.form__radio-span
+  font-size: 14px
+  font-weight: 400
+  
+.form__input
+  box-sizing: border-box
+  font-family: "PT Sans", sans-serif
+  font-size: 18px
+  font-weight: 600
+  width: 100%
+  height: 58px
+  padding: 20px 20px
+  background-color: variables.$color-bg-grey
+
+.contacts-fildset__lable
+  position: relative
+  flex-wrap: wrap
+  
+.contacts-fildset__lable-name
+  margin-left: 20px
+
+.contacts-fildset__contact-svg-cover
+  position: absolute
+  top: 31px
+  right: 0px
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 58px
+  height: 58px
+  background-color: variables.$color-second-grey
+
+
+.impression-fildset__legend
+  left: 10%
+
+.form__radio-span
+  position: relative
+  display: block
+  width: 56px
+  height: 56px
+  border: none
+  border-radius: 50%
+  background-color: variables.$color-bg-grey
+
+
+.impression-fildset__input:checked + .form__radio-span::after 
+  content: ""
+  position: absolute
+  width: 20px
+  height: 20px
+  background-color: red
+  border-radius: 50%
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+.attractions-fildset
+  padding-top: 80px
+
+.attractions-fildset__legend
+  text-align: center
+  left: 8%
+
+
+.attractions-fildset__span
+  position: relative
+  display: block
+  width: 56px
+  height: 56px
+  border: none
+  background-color: variables.$color-bg-grey
+
+.attractions-fildset__input:checked + .attractions-fildset__span::after
+  content: ""
+  display: block
+  position: absolute
+  top: 50%
+  left: 50%
+  width: 24px
+  height: 16px
+  border-radius: 50%
+  transform: translate(-50%, -50%)
+  background-image: url("../img/tick.png")
+
+.textarea__lable
+  flex-direction: column
+  .form__input
+    box-sizing: border-box
+    width: 100%
+    height: 160px
+    padding: 20px 20px
+    border: none
+    margin-bottom: 40px
+
+.form-btn
+  width: 100%
+  height: 58px
+  border: none
+  margin-bottom: 40px
+
+@media (min-width: variables.$tablet-width)
+  .page-inner.container
+    margin: 0 auto
+    padding: 0 60px
+
+  .intro--form__hero
+    margin-left: -54px
+    width: 768px
+
+  .feedback
+    padding-top: 20px
+    text-align: center
+    
+
+  .feedback__text
+    margin: 0 auto
+
+  .form
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  .feedback__text
+    max-width: 450px
+    
+  
+  .auth-fildset
+    border: none
+    max-width: 270px
+    order: 2
+  
+  .contacts-fildset
+    margin-top: 20px
+    margin-bottom: 40px
+    order: 3
+    width: 100%
+
+  .contacts-fildset__legend
+    width: 385px
+    top: -12px
+    left: 130px
+    text-align: center
+    background: variables.$color-white
+
+  .contacts-fildset__legend span
+    display: inline-block
+
+  .impression-fildset
+    border: none
+    order: 1
+   
+  .attractions-fildset
+    margin: 0 auto
+    margin-bottom: 40px
+    padding-left: 100px
+    flex-wrap: wrap
+    height: 150px
+    order: 4
+    width: 100%
+
+  .attractions-fildset__legend
+    text-align: center
+    width: 385px
+    top: -12px
+    left: 130px
+    background: variables.$color-white
+
+  .attractions-fildset__legend span
+    display: inline-block
+    width: 285px
+
+  .textarea__lable
+    border-top: 1px solid variables.$color-second-grey
+    position: relative
+    padding-top: 20px
+    margin-bottom: 40px
+    order: 5
+    width: 100%
+
+  .textarea__lable-legend
+    display: block
+    position: absolute
+    text-align: center
+    top: -12px
+    width: 395px
+    height: 20px
+    background: variables.$color-white
+    
+  .textarea__lable-legend span
+    display: inline-block
+    width: 256px
+
+  .form-btn
+    order: 6
+    width: 100%
+
+  
+
+@media (min-width: variables.$desktop-width)
+  .intro--form__hero
+    width: 1200px
+
+  .auth-fildset
+    max-width: 400px
+
+  .contacts-fildset
+    flex-direction: row
+    justify-content: space-between
+    margin-top: 20px
+
+  .attractions-fildset
+    flex-direction: row
+    justify-content: space-between
+
+  .form-btn
+    max-width: 400px
+
+  .attractions-fildset__legend
+    left: 30%
+
+  .contacts-fildset__legend
+    left: 30%

@@ -1,0 +1,106 @@
+@use "utils/variables" as variables
+@use "utils/variables" as fonts
+
+.panorama
+  .panorama__message-text
+    display: flex
+    justify-content: center 
+    align-items: center
+    text-align: center
+    padding: 0 30px
+    height: 188px
+  .panorama__gallery-item-wrapper
+    .panorama__img-wrapper
+      position: relative
+      margin: 0 auto
+      .panorama__mark-wrapper
+        position: absolute
+        top: 0
+        right: 20px
+        width: 140px
+        height: 34px
+        background: variables.$color-link
+        color: variables.$color-secondary
+        font-size: 12px
+        font-weight: variables.$font-weight-bold
+        text-align: center
+        line-height: 34px
+
+.gallery__reviews-cover
+  width: 280px
+  margin: 0 auto
+  margin-top: -4px
+  margin-bottom: 20px
+  padding: 20px
+  background-color: variables.$color-grey
+  .gallery__reviews-user-text
+    font-weight: variables.$font-weight-bold
+    .gallery__reviews-user
+      font-size: variables.$font-size-small
+      font-weight: variables.$font-weight-lite
+      color: grey
+
+.gallery__reviews-like-cover
+  display: flex
+  align-items: center
+  justify-content: start
+  gap: 10px
+  margin-top: 20px
+  .gallery__reviews-like-svg
+    fill: variables.$color-link
+    color: variables.$color-link
+  .gallery__reviews-like-text
+    color: variables.$color-link
+   
+
+
+@media screen and (min-width: #{variables.$breakpoint-md})
+  .panorama__img-wrapper
+    height: 510px
+    .panorama__img
+      height: 510px
+  .panorama__reviews
+    width: 620px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    .panorama__reviews-user
+      order: 1
+    .panorama__reviews-testemonity
+      order: 3
+      width: 100%
+    .panorama__reviews-like-cover
+      order: 2
+      margin-top: 0
+
+  .gallery__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    gap: 10px
+    .gallery__item
+      width: 300px
+      height: 455px
+      margin-bottom: 10px
+      .gallery__img-wrapper
+        width: 300px
+        height: 300px
+        .gallery__img
+          width: 300px
+          height: 300px
+      .gallery__reviews-cover
+        width: 300px
+        height: 166px
+        box-sizing: border-box
+        margin: 0
+        margin-top: -10px
+        .gallery__reviews-user-text
+          margin: 0
+          margin-bottom: 10px
+
+  
+
+
+@media screen and (min-width: #{variables.$breakpoint-xl})

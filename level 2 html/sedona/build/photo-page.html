@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>sedon-portfolio</title>
+  </head>
+  <body class="body">
+    <div style="display: none" class="page-header__wrapper">
+      <include src="build/svg/sprite/sprite.svg"></include>
+    </div>
+
+    <header class="page-header">
+      <nav class="page-header__nav">
+        <div class="page-header__nav-wrapper">
+          <div class="page-header__close-btn-cover">
+            <span class="page-header__nav-close-btn close-btn"></span>
+          </div>
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="./index.html" class="nav-list__link link">Главная</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./photo-page.html" class="nav-list__link link"
+                >ФОТО И ВИДЕО</a
+              >
+            </li>
+            <li class="nav-list__item">
+              <a href="./form.html" class="nav-list__link link"
+                >форма отзива
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./hotels.html" class="nav-list__link link">Гостинница</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-header__cover">
+          <a href="./index.html" class="page-header__link link">
+            <svg
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              viewBox="0 0 101.67 83.98"
+              class="page-header__logo"
+            >
+              <use
+                xlink:href="svg/icon/symbol/sprite.svg#logotyle-mobile"
+              ></use>
+            </svg>
+          </a>
+          <button class="page-header__btn-menu">
+            <svg
+              id="Layer_1"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 22.93 21.98"
+              width="23"
+              height="21"
+              class="page-header__btn-menu-icon"
+            >
+              <use xlink:href="svg/icon/symbol/sprite.svg#nav-btn"></use>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main container">
+      <h1 class="visually-hidden">Sedona info site</h1>
+
+      <section class="intro inner-page">
+        <div class="intro__cover">
+          <img
+            src="./img/hero-text-sedona.png"
+            alt=""
+            class="intro__text-svg"
+          />
+          <div class="intro__shape"></div>
+        </div>
+      </section>
+
+      <section class="photo-gallery">
+        <div class="photo-gallery__text-wrapper">
+          <h2 class="photo-gallery__title">Фото и видео</h2>
+          <p class="photo-gallery__description">
+            Не можете решиться на путешествие из-за курса? Фотографии помогут
+            вам забыть о политике и экономике.
+          </p>
+        </div>
+        <ul class="photo-gallery__list">
+          <li class="photo-gallery__item galery-item first">
+            <div class="galery-item__img">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./img/photo-gallery/normal/photo-1-desktop.png   1x,
+                    ./img/photo-gallery/normal/photo-1-desktop2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/photo-gallery/normal/photo-1-tablet.png   1x,
+                    ./img/photo-gallery/normal/photo-1-tablet2x.png 2x
+                  "
+                />
+                <img
+                  src="./img/photo-gallery/normal/photo-1-mobile.png"
+                  srcset="./img/photo-gallery/normal/photo-1-mobile2x.png 2x"
+                  alt=""
+                  class="galery-item__img"
+                />
+              </picture>
+            </div>
+            <div class="galery-item__author-wrapper">
+              <div>
+                <h3 class="galery-item__title">неродные просторы</h3>
+                <p class="galery-item__text gallery-autor">
+                  Автор фото: <span class="gallery-autor">Борис</span>
+                </p>
+              </div>
+              <div class="galery-item__like-cover">
+                <svg
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  viewBox="0 0 22 20"
+                  class="galery-item__like-svg like-svg"
+                >
+                  <use xlink:href="svg/icon/symbol/sprite.svg#like-icon"></use>
+                </svg>
+                <p class="galery-item__like-text">97</p>
+              </div>
+            </div>
+          </li>
+          <li class="photo-gallery__item galery-item">
+            <div class="galery-item__img second">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./img/photo-gallery/normal/photo-2-desktop.png   1x,
+                    ./img/photo-gallery/normal/photo-2-desktop2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/photo-gallery/normal/photo-2-tablet.png   1x,
+                    ./img/photo-gallery/normal/photo-2-tablet2x.png 2x
+                  "
+                />
+                <img
+                  src="./img/photo-gallery/normal/photo-2-mobile.png"
+                  srcset="./img/photo-gallery/normal/photo-2-mobile2x.png 2x"
+                  alt=""
+                  class="galery-item__img"
+                />
+              </picture>
+            </div>
+            <div class="galery-item__author-wrapper">
+              <div>
+                <h3 class="galery-item__title">Местная растительность</h3>
+                <p class="galery-item__text gallery-autor">
+                  Автор фото: <span class="gallery-autor">Сергей</span>
+                </p>
+              </div>
+              <div class="galery-item__like-cover">
+                <svg
+                  id="Layer_2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  viewBox="0 0 22 20"
+                  class="galery-item__like-svg like-svg"
+                >
+                  <use xlink:href="svg/icon/symbol/sprite.svg#like-icon"></use>
+                </svg>
+                <p class="galery-item__like-text">97</p>
+              </div>
+            </div>
+          </li>
+          <li class="photo-gallery__item galery-item">
+            <div class="galery-item__img thrid">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./img/photo-gallery/normal/photo-3-desktop.png   1x,
+                    ./img/photo-gallery/normal/photo-3-desktop2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/photo-gallery/normal/photo-3-tablet.png   1x,
+                    ./img/photo-gallery/normal/photo-3-tablet2x.png 2x
+                  "
+                />
+                <img
+                  src="./img/photo-gallery/normal/photo-3-mobile.png"
+                  srcset="./img/photo-gallery/normal/photo-3-mobile2x.png 2x"
+                  alt=""
+                  class="galery-item__img"
+                />
+              </picture>
+            </div>
+            <div class="galery-item__author-wrapper">
+              <div>
+                <h3 class="galery-item__title">Дорога на север</h3>
+                <p class="galery-item__text gallery-autor">
+                  Автор фото: <span class="gallery-autor">Петр</span>
+                </p>
+              </div>
+              <div class="galery-item__like-cover">
+                <svg
+                  id="Layer_3"
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  viewBox="0 0 22 20"
+                  class="galery-item__like-svg like-svg"
+                >
+                  <use xlink:href="svg/icon/symbol/sprite.svg#like-icon"></use>
+                </svg>
+                <p class="galery-item__like-text">127</p>
+              </div>
+            </div>
+          </li>
+          <li class="photo-gallery__item galery-item">
+            <div class="galery-item__img fourth">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./img/photo-gallery/normal/photo-4-desktop.png   1x,
+                    ./img/photo-gallery/normal/photo-4-desktop2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/photo-gallery/normal/photo-4-tablet.png   1x,
+                    ./img/photo-gallery/normal/photo-4-tablet2x.png 2x
+                  "
+                />
+                <img
+                  src="./img/photo-gallery/normal/photo-4-mobile.png"
+                  srcset="./img/photo-gallery/normal/photo-4-mobile2x.png 2x"
+                  alt=""
+                  class="galery-item__img"
+                />
+              </picture>
+            </div>
+            <div class="galery-item__author-wrapper">
+              <div>
+                <h3 class="galery-item__title">Мост дьявола</h3>
+                <p class="galery-item__text gallery-autor">
+                  Автор фото: <span class="gallery-autor">Антон</span>
+                </p>
+              </div>
+              <div class="galery-item__like-cover">
+                <svg
+                  id="Layer_4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  viewBox="0 0 22 20"
+                  class="galery-item__like-svg like-svg"
+                >
+                  <use xlink:href="svg/icon/symbol/sprite.svg#like-icon"></use>
+                </svg>
+                <p class="galery-item__like-text">917</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="advantages">
+        <h2 class="advantages__title">Все еще сомневаетесь?</h2>
+        <p class="advantages__text">
+          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали
+          в очередной раз!
+        </p>
+        <video
+          controls
+          autoplay
+          class="advantages__video"
+          poster="./img/video-mobile.png"
+        >
+          <source
+            type="video/mp4"
+            src="../../[HTML Academy] Профессиональный HTML и CSS, уровень 2/01 Вводный/Скринкасты/1 Как установить Git и работать в консоли.mp4"
+          />
+        </video>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_cover">
+        <a href="./index.html" class="link footer__first-link"
+          ><strong class="footer__strong">#visitSEDONA</strong></a
+        >
+
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="" class="link social__link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="17"
+                height="15"
+                viewBox="0 0 17 15"
+              >
+                <use xlink:href="svg/icon/symbol/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="link social__link"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="22"
+                viewBox="0 0 12 22"
+              >
+                <use xlink:href="svg/icon/symbol/sprite.svg#fb-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="link social__link"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="20"
+                height="16"
+                viewBox="0 0 20 16"
+              >
+                <use xlink:href="svg/icon/symbol/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <div class="page-footer__copirite copirite">
+          <p class="page-footer__copirite-text">WEBSITE by</p>
+          <a href="#" class="link copirite__link">
+            <svg
+              id="Layer_12"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 108.08 36.85"
+              class="footer__copirite-svg"
+              width="54"
+            >
+              <use
+                xlink:href="svg/icon/symbol/sprite.svg#logo-htmlacademy"
+              ></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

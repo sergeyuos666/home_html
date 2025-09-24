@@ -1,0 +1,121 @@
+@use "../../variables.sass"
+
+
+.cause-first
+  display: flex
+  flex-direction: column
+  gap: 0
+  margin-bottom: 40px
+
+.cause-first__cover-text
+  position: relative
+  box-sizing: border-box
+  padding: 38px 0
+  padding-top: 40px
+  background-color: variables.$color-blue
+
+.cause-first__cover-shape
+  position: absolute
+  top: -30px
+  left: 0
+  width: 100%
+  height: 57px
+  background-image: url("../img/shape-caus.png")
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+
+.cause-first__cover-text
+  text-align: center
+  color: variables.$color-white
+
+.cause-first__title 
+  font-size: 18px
+  line-height: 26px
+  font-weight: 700
+  margin: 0
+  margin-bottom: 14px
+
+
+
+.cause-first__number
+  display: flex
+  gap: 5px
+  justify-content: center
+  align-items: center
+  font-size: 14px
+  font-weight: 400
+  margin-bottom: 14px
+
+
+.cause-first__number::before
+  content: ''
+  display: block
+  width: 10px
+  height: 2px
+  margin: 0
+  background-color: variables.$color-white
+
+.cause-first__number::after
+  content: ''
+  display: block
+  width: 10px
+  height: 2px
+  margin: 0
+  background-color: variables.$color-white
+
+.cause-first__text  
+  font-size: 14px
+  font-weight: 400
+  width: 280px
+  text-align: center
+  margin: 0 auto
+
+.cause-first__cover-img
+  height: 262px
+  background-image: url("../img/photo-citymobile.png")
+  background-size: 100%
+  background-position: center
+  background-repeat: no-repeat
+
+  
+@media (min-width: variables.$tablet-width) 
+  .cause-first__cover-shape
+    display: none
+
+  .cause-first
+    flex-direction: row
+
+  .cause-first__cover-text
+    width: 256px
+
+  .cause-first__title
+    margin: 0 auto
+    width: 124px
+    margin-bottom: 14px
+
+
+  .cause-first__text
+    width: 164px
+
+  .cause-first__cover-img
+    width: 512px
+
+@media (min-width: variables.$desktop-width) 
+  .cause-first
+    flex-direction: row
+
+  .cause-first__cover-text
+    width: 400px
+
+  .cause-first__title
+    margin: 0 auto
+    width: 124px
+    margin-top: 14px 
+    margin-bottom: 14px
+    
+  .cause-first__text
+    width: 262px
+
+  .cause-first__cover-img
+    width: 800px

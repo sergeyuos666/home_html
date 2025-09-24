@@ -1,0 +1,38 @@
+@use "utils/variables" as variables
+@use "utils/variables" as fonts
+
+.close-btn
+  position: relative
+  display: block
+  width: 30px
+  height: 30px
+  &::before
+    content: ""
+    position: absolute
+    top: 0px
+    left: 12px
+    width: 4px
+    height: 25px
+    transform: rotate(45deg)
+    background-color: #fff
+  &::after
+    content: ""
+    position: absolute
+    top: 0px
+    left: 12px
+    width: 4px
+    height: 25px
+    transform: rotate(-45deg)
+    background-color: #fff
+
+.close-btn:hover,
+.close-btn:focus 
+  cursor: pointer
+  fill: variables.$color-link
+  color: variables.$color-link
+
+.close-btn:active 
+  cursor: pointer
+  fill: variables.$color-link
+  color: variables.$color-link
+  opacity: 0.4
